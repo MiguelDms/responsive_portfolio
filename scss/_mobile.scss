@@ -1,0 +1,902 @@
+//widescreens
+
+@include mediaXl {
+    .projects {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+
+}
+
+
+//height 1000px
+@include mediaXlHeight {
+    #home {
+
+        .lg-heading {
+            margin-top: 4rem;
+        }
+
+
+        #presentation {
+            margin-top: 11rem;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+//Desktops and laptops 769 ^^
+
+@include mediaLg {
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+// 900px
+
+@include mediaMedium {
+
+
+    //index
+
+    #home {
+        #presentation {
+            margin-left: 200px;
+            margin-top: 30px;
+        }
+    }
+
+    //music.html
+
+    main#music-work {
+        .whole-content .main-content .about-wind-extra {
+            font-size: 0.8rem;
+        }
+
+        .whole-content .extra-content {
+            padding-left: 0;
+        }
+    }
+
+
+    //footer
+    .footer-address {
+        .footer-inside {
+
+            font-size: 0.8rem;
+        }
+    }
+
+    #nav ul {
+        margin-left: 30px;
+
+        li {
+            margin-right: 30px;
+        }
+    }
+
+    h2.copy {
+        font-size: 1rem;
+        justify-self: end;
+        align-self: flex-end;
+    }
+
+
+    //footer 
+
+    #main-footer .footer-main {
+
+
+        .footer-address h3,
+        .footer-links h3,
+        .footer-terms h3 {
+            font-size: 1rem;
+        }
+    }
+
+}
+
+// height 700px
+
+@include mediaLgHeight {
+    #home {
+
+        .lg-heading {
+            margin-top: 4rem;
+        }
+
+
+        #presentation {
+            margin-top: 8rem;
+        }
+    }
+}
+
+
+
+// Tablets & small laptops 768px
+@include mediaMd {
+
+    //index 
+    #home {
+        #presentation {
+            margin-left: 100px;
+        }
+
+
+
+        .lg-heading {
+            font-size: 2.5rem;
+        }
+
+        .sm-heading {
+            margin-bottom: 1rem;
+            font-size: 3.5rem;
+            padding: 0;
+        }
+
+    }
+
+
+    main {
+        align-items: left;
+        text-align: left;
+
+        &#work {
+            padding-top: 120px;
+        }
+
+        &#music-work {
+            align-items: initial;
+            text-align: initial;
+        }
+
+        .lg-heading {
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+    }
+
+    img.images.opa {
+        margin-left: 0px;
+        margin-top: 30px;
+
+    }
+
+    img.images {
+        margin-left: 0px;
+        margin-top: 0px;
+
+    }
+
+    ul.menu-nav,
+    div.menu-branding {
+        float: none;
+        width: 100%;
+        min-height: 0;
+
+        &.show {
+            transform: translate3d(0, 0, 0);
+            padding: 0;
+        }
+    }
+
+    .bio-image {
+        margin: auto;
+    }
+
+    .menu-nav {
+        height: 65vh;
+        transform: translate3d(-100%, 0, 0);
+        font-size: 24px;
+    }
+
+    .menu-branding {
+        height: 35vh;
+        transform: translate3d(100%, 0, 0);
+
+        .portrait {
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    .about-info {
+        grid-template-areas:
+            'bioimage'
+            'bio'
+            'examples'
+            'job1'
+            'job2'
+            'job3';
+
+        grid-template-columns: 1fr;
+
+        .bio {
+            width: 100%;
+        }
+
+    }
+
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #nav ul {
+        padding: 0;
+        margin-left: 0;
+    }
+
+    #nav ul li a {
+        font-size: 1rem;
+    }
+
+    .itemP .test img {
+        height: 250px;
+    }
+
+
+    //scripts.html
+
+    main#script-work .whole-content {
+        text-align: left;
+        padding-right: 2rem;
+
+        h1.lg-heading {
+            font-size: 3rem;
+        }
+
+        .extra-content {
+            flex-direction: column;
+            margin-left: 1rem;
+            margin-top: 1rem;
+
+            .category {
+                margin-bottom: 0;
+            }
+
+        }
+    }
+
+    // contact 
+
+    main#contact {
+
+        .lg-heading,
+        .sm-heading-contact {
+            text-align: initial;
+        }
+
+        .form-contact {
+
+            text-align: left;
+            padding-left: 15px;
+            grid-template-columns: 1fr;
+            grid-template-areas: "contact"
+                "form-intro"
+
+                "form"
+            ;
+
+            .boxes {
+                margin: 0;
+                padding: 0;
+                height: auto;
+
+                div {
+
+                    width: 100%;
+
+                }
+            }
+
+
+            .form-intro {
+                width:
+                    100%;
+            }
+        }
+    }
+
+
+
+    //footer 
+
+    #main-footer {
+
+        border-top: 1px solid darkblue;
+        padding: 2rem 10px;
+
+        .footer-main {
+            margin: 0;
+        }
+
+
+
+        .footer-main .footer-main-title h2 {
+            font-size: 1.2rem;
+        }
+
+
+        .footer-terms {
+            background: none;
+            margin-top: 0;
+        }
+
+        .footer-down .footer-icons {
+            font-size: 0.8rem;
+        }
+
+        h2.copy {
+            font-size: 0.6rem;
+            justify-self: end;
+            align-self: flex-end;
+        }
+    }
+}
+
+//Smartphones 500px
+@include mediaSm {
+    main#home h1 {
+        margin-top: 0vh;
+    }
+
+    #home {
+
+        .lg-heading {
+            font-size: 1.8rem;
+            line-height: 0.8;
+        }
+
+        .sm-heading {
+            margin-bottom: 1rem;
+            font-size: 2.8rem;
+            padding: 0
+        }
+
+        #presentation {
+            width: 100%;
+        }
+
+    }
+
+
+    //scripts.html
+
+    main#script-work .whole-content {
+
+        h1.lg-heading {
+            font-size: 2.5rem;
+        }
+
+        .extra-content {
+            img {
+                width: 270px;
+                height: 370px;
+            }
+
+            .page,
+            .category {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width: 650px) {
+
+
+    #home {
+        #presentation {
+            font-size: 1rem;
+            margin-top: 20px;
+            margin-left: 50px;
+        }
+
+        .icons {
+            font-size: 1rem;
+        }
+    }
+
+
+    #work-areas {
+
+        display: grid;
+        grid-gap: 30px;
+        grid-template-areas: 'design'
+            'music'
+            'screenwriting'
+            'photography';
+        grid-template-columns: 1fr;
+
+        .web-design,
+        .photography,
+        .music,
+        .screenwriting {
+            display: grid;
+            grid-template-columns: 1fr;
+
+            .itemP img {
+
+                width: 80%;
+
+            }
+        }
+
+        #web-design,
+        #photography,
+        #music,
+        #screenwriting {
+            height: initial;
+        }
+
+        #web-design {
+            grid-area: design;
+        }
+
+        #music {
+            grid-area: music;
+        }
+
+        #screenwriting {
+            grid-area: screenwriting;
+        }
+
+        #photography {
+            grid-area: photography;
+        }
+    }
+
+    //scripts.html
+
+    .menu-btn-script {
+        .btn-line {
+            background: black;
+        }
+    }
+
+    main#script-work {
+        padding: 1rem;
+
+
+        #back-to-work {
+            font-size: 0.5rem;
+            font-weight: bolder;
+            width: 45px;
+            height: 45px;
+            word-wrap: break-word;
+        }
+    }
+
+    //footer
+
+    #main-footer .footer-main {
+        grid-gap: 0;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+
+    //index 
+
+    #home {
+
+        #presentation {
+            font-size: 0.9rem;
+            padding: 0;
+            margin-top: 30px;
+        }
+    }
+
+
+    // about section 
+
+    main#about {
+        .bio {
+            font-size: 0.9rem;
+        }
+
+        padding: 1.4rem;
+    }
+
+
+    //work.html
+
+    main#work {
+        padding-top: 50px;
+
+        .sm-heading-work {
+            margin-bottom: 10px;
+        }
+
+        #work-areas {
+            #web-design {
+                margin-top: 50px;
+            }
+
+            .arrow-down-start {
+                visibility: visible;
+            }
+
+            .arrow-down {
+                visibility: visible;
+            }
+        }
+
+        h1 {
+            margin-left: 25px;
+        }
+
+        h2 {
+            margin-left: 20px;
+            font-size: 1.2em;
+        }
+
+
+    }
+
+    nav#nav {
+        display: none;
+    }
+
+
+    //music.html 
+
+    main#music-work {
+
+        padding: 30px;
+
+        h1.lg-heading {
+            font-size: 2.5rem;
+        }
+
+        .whole-content {
+            grid-gap: 0;
+        }
+
+        .main-content {
+            margin-bottom: 10px;
+
+            .about-this {
+                font-size: 0.8rem;
+            }
+        }
+
+        .nav-left {
+            float: left;
+        }
+
+        .nav-right {
+            float: right;
+            margin-right: 40px;
+        }
+
+        .nav-topics {
+            font-size: 1rem;
+        }
+
+        .ul-collapse2,
+        .links {
+            font-size: 0.9rem;
+        }
+
+
+        .whole-content .main-content .about-wind {
+            font-size: 0.8rem;
+        }
+
+        .whole-content .extra-content h3,
+        .release {
+            font-size: 0.7rem;
+            width: 80%;
+        }
+    }
+
+
+    // contact 
+
+    main#contact {
+
+        padding: 2rem;
+
+
+        .lg-heading {
+            font-size: 2rem;
+        }
+
+        .sm-heading-contact {
+            font-size: 1.2rem;
+        }
+
+        .form-contact form input,
+        .form-contact form #message,
+        .form-contact form button {
+            width: 100%;
+            margin-left: 0;
+        }
+
+    }
+
+
+    //footer 
+
+    footer#main-footer {
+
+        padding: 30px 0;
+
+
+        .footer-main {
+
+            margin: 0;
+            text-align: center;
+
+
+
+            .footer-terms {
+                margin-bottom: 1rem;
+                width: 100%;
+
+                .cookie {
+                    padding: 0;
+                }
+            }
+
+            .footer-links a {
+                width: 100%;
+            }
+
+            .footer-main-title {
+
+                padding: 0;
+                border-left: none;
+
+                & h2 {
+                    font-size: 1.8rem;
+                }
+            }
+
+            grid-template-columns: 1fr;
+
+
+        }
+
+        .footer-message {
+            margin: 1rem auto;
+        }
+
+        .footer-down {
+            display: flex;
+            flex-direction: column;
+
+
+            .copy {
+                align-self: initial;
+                margin: auto;
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+
+@media screen and (max-height: 500px) {
+
+    main#home h1 {
+        margin-top: 0vh;
+    }
+
+    #home {
+
+        padding: 3rem;
+
+        .lg-heading {
+            font-size: 1.5rem;
+            line-height: 0.8;
+        }
+
+        .sm-heading {
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+            padding: 0
+        }
+
+        #presentation {
+            width: 100%;
+            margin-left: 3rem;
+            font-size: 0.6rem;
+        }
+
+    }
+
+
+}
+
+
+@media screen and (min-height: 600px) and (max-width: 500px) {
+
+    main#home h1 {
+        margin-top: 0vh;
+    }
+
+    #home {
+
+        padding: 3rem;
+
+        .lg-heading {
+            font-size: 1.8rem;
+            line-height: 0.8;
+        }
+
+        .sm-heading {
+            margin-bottom: 1rem;
+            font-size: 2.8rem;
+            padding: 0
+        }
+
+        #presentation {
+            width: 90%;
+            margin-left: 3rem;
+            font-size: 1.1rem;
+        }
+
+    }
+}
+
+
+
+
+//Xtra small 380px 
+
+@include mediaXs {
+
+    //index 
+    #home {
+
+        padding: 3rem;
+
+        .lg-heading {
+            margin-top: 2rem;
+            font-size: 1.8rem;
+            line-height: 0.8;
+        }
+
+        .sm-heading {
+            margin-bottom: 1rem;
+            font-size: 2.1rem;
+            padding: 0
+        }
+
+        #presentation {
+
+            font-size: 1rem;
+            width: 90%;
+        }
+
+        .icons {
+            font-size: 1rem;
+        }
+
+    }
+
+    //music.html
+
+    main#music-work {
+        .whole-content {
+            grid-template-columns: 0.3fr 1fr;
+            grid-template-areas: 'nav nav''main main''extra extra';
+
+
+            .work-nav {
+                grid-area: nav;
+                background: rgb(160, 160, 30);
+                padding: 10px;
+                margin-bottom: 10px;
+
+                hr {
+                    display: none;
+                }
+            }
+
+            .main-content {
+                grid-area: main;
+            }
+
+            .extra-content {
+                grid-area: extra;
+            }
+        }
+    }
+
+    //contact 
+
+    main#contact {
+
+        padding: 20px 10px 20px 10px;
+
+
+        .form-contact .form-intro {
+            font-size: 0.8em;
+        }
+
+        .form-contact .boxes div h4 {
+            font-size: 0.8rem;
+        }
+    }
+
+    //footer
+
+    footer#main-footer {
+
+        .footer-message {
+            font-size: 0.7rem;
+        }
+
+        .footer-down {
+            .copy {
+
+                margin: 0px;
+                font-size: 0.7rem;
+
+            }
+        }
+
+        .footer-main {
+
+            & h3.footer-inside,
+            .footer-terms a h3,
+            .footer-links a {
+                font-size: 0.8rem;
+            }
+
+            .footer-main-title h2 {
+                font-size: 1rem;
+            }
+
+            .footer-down {
+
+                .footer-icons {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-height: 600px) and (max-width: 380px) {
+
+    main#home h1 {
+        margin-top: 0vh;
+    }
+
+    #home {
+
+        padding: 3rem;
+
+        .lg-heading {
+            font-size: 1.9rem;
+            line-height: 0.8;
+        }
+
+        .sm-heading {
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+            padding: 0
+        }
+
+        #presentation {
+            width: 90%;
+            margin-left: 3rem;
+            font-size: 0.8rem;
+        }
+
+    }
+}
