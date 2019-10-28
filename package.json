@@ -3,14 +3,17 @@
   "version": "1.0.0",
   "description": "Node crash course",
   "main": "index.js",
+  "homepage": "https://migueldms.github.io/responsive_portfolio",
   "scripts": {
-    "sass": "node-sass -w scss/ -o src/css/ --recursive"
+    "sass": "node-sass -w scss/ -o src/css/ --recursive",
+    "deploy": "gh-pages -d dist"
   },
   "author": "Miguel Pereira",
   "license": "MIT",
   "dependencies": {
     "autoprefixer": "^9.7.0",
     "element-closest-polyfill": "^1.0.0",
+    "gh-pages": "^2.1.1",
     "gulp-images-resizer": "0.0.7",
     "imagemin-mozjpeg": "^8.0.0",
     "node-sass": "^4.13.0",
