@@ -23,4 +23,4 @@ if (isset($_POST['submit'])) {
 
     header("Location: ../contact.html?mailsent");
         }
-}
+}}
